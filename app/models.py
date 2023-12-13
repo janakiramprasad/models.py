@@ -12,6 +12,7 @@ class Country(models.Model):
 class Capital(models.Model):
     country_ID=models.OneToOneField(Country, on_delete=models.CASCADE)
     capital=models.CharField(max_length=100)
+    country_code=models.IntegerField(default=True)
 
     def __str__ (self):
         return self.capital

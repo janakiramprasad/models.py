@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td,th
+        {
+            border: 3px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1>This is my fourth page</h1>
+    
+    <Table>
+        <tr>
+            <th>empno
+            </th>
+            <th>ename</th>
+            <th>Dept_no</th>
+                </tr>
+        {% for em in employee %}
+        <tr>
+            <td>{{ em.empno }}</td>
+            <td>{{ em.ename }}</td>
+            <td>{{ em.Dept_no}}</td>
+        </tr>
+        {% endfor %}
+    </Table>
+    </center>
+    
+</body>
+</html>

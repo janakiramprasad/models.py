@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td,th
+        {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is the Dept </h1>
+    <table>
+       <tr>
+        <th>Dept_no</th>
+        <th>Dname</th>
+       </tr>
+        {% for co in dept %}
+        <tr>
+            <td>{{co.Dept_no}}</td>
+            <td>{{co.dname}}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+    
+</body>
+</html>

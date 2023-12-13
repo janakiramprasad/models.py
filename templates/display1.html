@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td,th
+        {
+            border-collapse: collapse;
+            border: 2px solid black;
+            border-radius: 3px;
+            padding: 3px;
+            text-align: center;
+        }
+        body
+        {
+            text-align: center;
+            background-color:orange;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <center> 
+        <h1> This secound data page</h1>
+        <table>
+            <tr>
+                <th> country_ID</th>
+                <th> country_code</th>
+                <th> capital</th>
+            </tr>
+            {% for i in capital %}
+            <tr>
+                <td> {{i.country_ID}}</td>
+                <td> {{i.capital}}</td>
+                <td> {{i.capital}}</td>
+
+            </tr>
+
+
+            {% endfor %}
+
+
+        </table>
+
+
+
+
+
+
+
+
+
+
+    </center>
+</body>
+</html>
