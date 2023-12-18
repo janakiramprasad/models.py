@@ -24,5 +24,6 @@ urlpatterns = [
     path('display1/',display1,name='display1'),
     path('display2/',display2,name='display2'),
     path('display3/',display3,name='display3'),
+    path('insert_country/',insert_country,name='insert_country'),    
     
 ]
